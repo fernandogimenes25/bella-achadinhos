@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Migrar Produtos - Bella Achadinhos</title>
+  <style>
+    body { font-family: Arial; background: #0a0a0a; color: white; padding: 40px; max-width: 600px; margin: 0 auto; }
+    h1 { color: #f97316; }
+    button { background: #f97316; color: black; border: none; padding: 16px 32px; font-size: 16px; font-weight: bold; border-radius: 12px; cursor: pointer; width: 100%; margin-top: 20px; }
+    button:hover { background: #fb923c; }
+    #log { background: #111; border: 1px solid #333; border-radius: 12px; padding: 20px; margin-top: 20px; font-size: 13px; line-height: 2; min-height: 100px; }
+    .ok { color: #4ade80; }
+    .erro { color: #f87171; }
+    .info { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <h1>🚀 Migrar Produtos para Supabase</h1>
+  <p style="color: #94a3b8;">Este script pega os produtos do seu navegador e salva no Supabase para ficar online.</p>
+  
+  <div id="log"><span class="info">Clique no botão para iniciar a migração...</span></div>
+  
+  <button onclick="migrar()">Migrar Produtos Agora</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    const { createClient } = supabase;
+    const db = createClient(
+      'https://egvdnmyclemijwwqbaar.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVndmRubXljbGVtaWp3d3FiYWFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkzNzQ0NTgsImV4cCI6MjA5NDk1MDQ1OH0.WVJnxXJki80IeGWikrkLrHVIGPgrIluQVZHnH4uysbs'
+    );
+
+    function log(msg, tipo) {
+      const div = document.getElementById('log');
+      div.innerHTML += `<div class="${tipo || 'info'}">${msg}</div>`;
+    }
+
+    async function migrar() {
+      document.getElementById('log').innerHTML = '';
+      log('Iniciando migracao...', 'info');
+
+      // Pega produtos do localStorage
+      const raw = localStorage.getItem('bella_products');
+      if (!raw) {
+        log('Nenhum produto encontrado no navegador!', 'erro');
+        log('Abra esta pagina em http://localhost:3000 para acessar os produtos salvos.', 'info');
+        return;
+      }
+
+      const produtos = JSON.parse(raw);
+      log(`Encontrados ${produtos.length} produtos no navegador.`, 'ok');
+
+      let ok = 0, erro = 0;
+      for (const p of produtos) {
+        const { error } = await db.from('products').upsert([{
+          id: p.id || Date.now().toString(),
+          title: p.title || '',
+          price: p.price || '',
+          image: p.image || '',
+          rating: p.rating || '4.9',
+          category: p.category || '',
+          url: p.url || '',
+          badge: p.badge || '',
+        }]);
+        if (error) {
+          log(`ERRO: ${p.title} — ${error.message}`, 'erro');
+          erro++;
+        } else {
+          log(`✓ ${p.title}`, 'ok');
+          ok++;
+        }
+      }
+
+      // Pega categorias do localStorage
+      const rawCats = localStorage.getItem('bella_categories');
+      if (rawCats) {
+        const cats = JSON.parse(rawCats);
+        log(`Migrando ${cats.length} categorias...`, 'info');
+        for (let i = 0; i < cats.length; i++) {
+          await db.from('categories').upsert([{ name: cats[i], position: i }]);
+          log(`✓ Categoria: ${cats[i]}`, 'ok');
+        }
+      }
+
+      log('', '');
+      log(`Migracao concluida! ${ok} produtos salvos, ${erro} erros.`, ok > 0 ? 'ok' : 'erro');
+      if (ok > 0) {
+        log('Agora acesse http://localhost:3000 e seus produtos aparecem!', 'info');
+      }
+    }
+  </script>
+</body>
+</html>
