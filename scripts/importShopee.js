@@ -1,0 +1,62 @@
+const { chromium } = require("playwright"); 
+ 
+async function run() { 
+ 
+  const browser = await chromium.launch({ 
+    headless: false 
+  }); 
+ 
+  const page = await browser.newPage(); 
+ 
+  await page.goto( 
+    "https://collshp.com/n/fernandogimenes891585?share_channel_code=1^&view=storefront", 
+    { 
+      waitUntil: "networkidle" 
+    } 
+  ); 
+ 
+  await page.waitForTimeout(10000); 
+ 
+  const products = await page.evaluate(() => { 
+ 
+    const items = []; 
+ 
+    const cards = document.querySelectorAll("a"); 
+ 
+    cards.forEach((card) => { 
+ 
+      const title = 
+        card.innerText || ""; 
+ 
+      const link = 
+        card.href || ""; 
+ 
+      const image = 
+        card.querySelector("img")?.src || ""; 
+ 
+      if ( 
+        title.length > 5 && 
+        image.includes("http") 
+      ) { 
+ 
+        items.push({ 
+          title, 
+          image, 
+          link 
+        }); 
+ 
+      } 
+ 
+    }); 
+ 
+    return items; 
+ 
+  }); 
+ 
+  console.log( 
+    JSON.stringify(products, null, 2) 
+  ); 
+ 
+} 
+ 
+run(); 

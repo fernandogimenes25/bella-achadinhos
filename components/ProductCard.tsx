@@ -1,59 +1,38 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 export default function ProductCard({ product }: any) {
+
   return (
 
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      whileHover={{ y: -10 }}
-      className="group bg-white/5 border border-white/10 rounded-[32px] overflow-hidden hover:border-orange-500/40 transition-all duration-300 shadow-2xl"
+    <a
+      href={product.shopee_link}
+      target="_blank"
+      className="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-orange-500 transition hover:-translate-y-2"
     >
 
       <div className="relative overflow-hidden">
 
-        <motion.img
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.5 }}
+        <img
           src={product.image}
           alt={product.title}
-          className="h-80 w-full object-cover"
+          className="w-full h-72 object-cover group-hover:scale-110 transition duration-500"
         />
 
-        <div className="absolute top-4 left-4 bg-orange-500 text-black px-3 py-1 rounded-full text-xs font-black shadow-xl">
-          Viral
-        </div>
-
       </div>
 
-      <div className="p-6">
+      <div className="p-5">
 
-        <div className="flex items-center gap-2 mb-3">
-          <span className="text-yellow-400">★★★★★</span>
-          <span className="text-zinc-400 text-sm">4.9</span>
-        </div>
-
-        <h3 className="text-2xl font-black leading-snug">
+        <h2 className="font-bold text-white line-clamp-2 min-h-[55px] mb-5">
           {product.title}
-        </h3>
+        </h2>
 
-        <p className="text-orange-400 text-3xl font-black mt-4">
+        <div className="text-orange-400 font-black text-3xl">
           {product.price}
-        </p>
-
-        <a
-          href="https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
-          target="_blank"
-          className="block mt-6 text-center bg-orange-500 hover:bg-orange-400 transition text-black py-4 rounded-2xl font-black shadow-xl"
-        >
-          Ver Produto
-        </a>
+        </div>
 
       </div>
 
-    </motion.div>
+    </a>
+
   );
 }

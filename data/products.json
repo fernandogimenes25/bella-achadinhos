@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "title": "Produto 1",
+    "image": "https://down-br.img.susercontent.com/br-11134294-820m2-moh5qtlip6o57c",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 2,
+    "title": "Produto 2",
+    "image": "https://down-br.img.susercontent.com/br-11134294-820mh-moh5r0ir3v9cf3",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 3,
+    "title": "Jaqueta Brasil Feminina Com Zíper Gola Alta Blusa Seleção Brasileira Moda Blogueira",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820le-mnoqsakizh8g17_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 4,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 5,
+    "title": "Relógio Smartwatch W29 Pro Series 9 Feminino Masculino Original Microwear 47mm Memória 1GB ChatGPT",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8xjihinhik937_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 6,
+    "title": "IWO X8 Smartwatch Bluetooth Masculino Feminino Esporte À Prova D'água Relógio Inteligente Digital",
+    "image": "https://down-br.img.susercontent.com/file/cn-11134207-7ras8-m4eciuy6s6xz96_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 7,
+    "title": "Linha Her Code Eau De Parfum 50ml ORIGINAL LACRADO",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-81zue-mksgepg45vr7a4_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 8,
+    "title": "Perfume Feminino Floratta O Boticário Colônia 75ml – Delicadeza e Frescor Floral – Promoção!",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m59gtghz2mogd3_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 9,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 10,
+    "title": "Perfume Árabe Asad Lattafa Preto Masculino Intenso e Oriental 100ml",
+    "image": "https://down-br.img.susercontent.com/file/cn-11134207-820l4-mflyhpsnru3397_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 11,
+    "title": "kit 3 quadros decorativos copacabana rio de janeiro praia mar coqueiros com molduras",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1y2ehqpz8is26_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 12,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 13,
+    "title": "Quadros Decorativo Grande Paisagem Mar Coqueiro Praia Luxo Sala Moldura Kit 3 quadros 60x80 vidro",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfkgsimrnmdc91_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 14,
+    "title": "Kit 3 Quadros Decorativos Praia Paisagem Mar Areia Molduras",
+    "image": "https://down-br.img.susercontent.com/file/27272bb66fecdde44b4d8b7b0c932ebd_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 15,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 16,
+    "title": "Kit 3 Quadros Decorativos Céu Azul Praia Mar Por do Sol Moldura",
+    "image": "https://down-br.img.susercontent.com/file/d99d384c4ace8b33d1e059f7c322cf95_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 17,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 18,
+    "title": "Quadros decorativos paisagem praia quarto sala",
+    "image": "https://down-br.img.susercontent.com/file/7f58d7d42579a356535719633283afa2_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 19,
+    "title": "kit 3 quadro decorativo praia árvore natureza paisagem mar areia com molduras",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820lo-mluqooow2txg96_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 20,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 21,
+    "title": "Quadro decorativo 112x82cm Full HD Praia Mar Onda Por do Sol",
+    "image": "https://down-br.img.susercontent.com/file/br-11134201-7r98o-lo5rld11j8o98a_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 22,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 23,
+    "title": "Quadro Decorativo Grande 110x80cm Praia e Mar Pôr do Sol  Hall Casa Sala Quarto Decoração De Parede ",
+    "image": "https://down-br.img.susercontent.com/file/br-11134201-7r98o-lwoxh5rlxn98e6_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 24,
+    "title": "Quadros Decorativos 1 Peça 112X80 Árvore Lua Abstrato Luzes Sala Quarto Moderno",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820lo-mmw7bmlphuyo76_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 25,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 26,
+    "title": "Quadros Decorativos Trio Escritório Advocacia Direito Justiça e Ordem Profissão Decoração Moderno",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820me-mlnrdiyauarpd3_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 27,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 28,
+    "title": "Quadros Decorativos Mdf Águia Lobo Leão Foco Motivação Escritório Moderno",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820l6-mlnrdiyaoohx92_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 29,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 30,
+    "title": "Quadros Decorativos Leão de Juda Jesus Cristo + Cruz Moldura Sala Quarto",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820lo-mmv5v3otu5fm6f_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 31,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Tecnologia",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 32,
+    "title": "Quadros Decorativos 3pçs Indígena Cocar Colorido Cultura Moderno para Sala Quarto Hall",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820ly-mmw5zom6xkhsfb_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Casa Moderna",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 33,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Decoração",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 34,
+    "title": "Quadro Decorativo Sala Abstrato Linha Gold Moldura Moderna",
+    "image": "https://down-br.img.susercontent.com/file/br-11134207-820l4-mmv54b9s5jwk5e_tn.webp",
+    "price": "R$ 99,90",
+    "category": "Piscina",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  },
+  {
+    "id": 35,
+    "title": "flag-label",
+    "image": "https://down-br.img.susercontent.com/file/br-11134258-7r98o-lyb2tcifmjtx6e",
+    "price": "R$ 99,90",
+    "category": "Virais",
+    "badge": "TREND",
+    "link": "https://collshp.com/n/fernandogimenes891585?share_channel_code=1&view=storefront"
+  }
+]

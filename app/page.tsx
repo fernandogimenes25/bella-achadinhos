@@ -1,75 +1,172 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import ProductCard from "../components/ProductCard";
+"use client";
+
+import { useMemo, useState } from "react";
+import products from "../data/products.json";
 
 export default function Home() {
 
-const categories = [
-"Casa Moderna",
-"Decoracao",
-"Tecnologia",
-"Automacao",
-"Piscina",
-"Virais",
-];
+  const [search, setSearch] = useState("");
+  const [activeCategory, setActiveCategory] = useState("Todos");
 
-const products = [
-{
-title: "Projetor Smart 4K",
-price: "R$ 599,90",
-image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80^&w=1200^&auto=format^&fit=crop",
-},
-{
-title: "Luminaria LED Premium",
-price: "R$ 129,90",
-image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80^&w=1200^&auto=format^&fit=crop",
-},
-{
-title: "Painel Ripado Decorativo",
-price: "R$ 249,90",
-image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80^&w=1200^&auto=format^&fit=crop",
-}
-];
+  const categories = useMemo(() => {
 
-return (
-<div className="min-h-screen bg-black text-white">
+    const cats = products.map(
+      (product: any) => product.category
+    );
 
-<Navbar />
+    return ["Todos", ...new Set(cats)];
 
-<Hero />
+  }, []);
 
-<section className="max-w-7xl mx-auto px-6 py-8">
+  const filteredProducts = useMemo(() => {
 
-<div className="flex gap-4 overflow-x-auto pb-2">
+    return products.filter((product: any) => {
 
-{categories.map((category) => (
-<button
-key={category}
-className="whitespace-nowrap px-5 py-3 rounded-2xl bg-white/5 border border-white/10 hover:bg-orange-500 transition"
->
-{category}
-</button>
-))}
+      const searchMatch = product.title
+        .toLowerCase()
+        .includes(search.toLowerCase());
 
-</div>
+      const categoryMatch =
+        activeCategory === "Todos" ||
+        product.category === activeCategory;
 
-</section>
+      return searchMatch && categoryMatch;
 
-<section className="max-w-7xl mx-auto px-6 py-12">
+    });
 
-<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+  }, [search, activeCategory]);
 
-{products.map((product) => (
-<ProductCard key={product.title} product={product} />
-))}
+  return (
 
-</div>
+    <div className="min-h-screen bg-black text-white">
+
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-xl">
+
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+
+          <div>
+
+            <h1 className="text-2xl font-black">
+              Bella Achadinhos
+            </h1>
+
+            <p className="text-zinc-500 text-sm">
+              Produtos virais premium
+            </p>
+
+          </div>
+
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Buscar..."
+            className="bg-zinc-900 border border-zinc-800 rounded-2xl px-4 py-3 w-[280px] outline-none"
+          />
+
+        </div>
+
+      </header>
+
+      <section className="max-w-7xl mx-auto px-4 pt-6 pb-4">
+
+        <div className="flex gap-3 overflow-x-auto">
+
+          {categories.map((category) => (
+
+            <button
+              key={String(category)}
+              onClick={() => setActiveCategory(String(category))}
+              className={`whitespace-nowrap px-5 py-2 rounded-2xl text-sm font-bold transition-all ${
+                activeCategory === category
+                  ? "bg-orange-500 text-black"
+                  : "bg-zinc-900 border border-zinc-800"
+              }`}
+            >
+              {String(category)}
+            </button>
+
+          ))}
+
+        </div>
 
       </section>
 
-      <Footer />
+      <section className="max-w-7xl mx-auto px-4 pb-20">
+
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+
+          {filteredProducts.map((product: any) => (
+
+            <div
+              key={product.id}
+              className="group bg-zinc-900 border border-zinc-800 rounded-[24px] overflow-hidden hover:border-orange-500/40 transition-all duration-300"
+            >
+
+              <div className="relative overflow-hidden">
+
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+
+                <div className="absolute top-3 left-3 bg-orange-500 text-black px-3 py-1 rounded-full text-[10px] font-black">
+                  {product.badge}
+                </div>
+
+              </div>
+
+              <div className="p-4">
+
+                <div className="flex items-center justify-between mb-2">
+
+                  <span className="text-yellow-400 text-sm">
+                    ★★★★★
+                  </span>
+
+                  <span className="text-zinc-500 text-xs">
+                    4.9
+                  </span>
+
+                </div>
+
+                <h2 className="text-sm font-bold leading-snug line-clamp-2 min-h-[38px]">
+                  {product.title}
+                </h2>
+
+                <p className="text-zinc-500 text-xs mt-2">
+                  {product.category}
+                </p>
+
+                <div className="mt-4">
+
+                  <p className="text-xl font-black text-orange-400">
+                    {product.price}
+                  </p>
+
+                </div>
+
+                <a
+                  href={product.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full mt-4 bg-orange-500 hover:bg-orange-400 transition text-center text-black py-3 rounded-2xl font-black text-sm"
+                >
+                  Comprar
+                </a>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
 
     </div>
+
   );
+
 }
